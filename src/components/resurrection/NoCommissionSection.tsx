@@ -73,10 +73,131 @@ export default function NoCommissionSection() {
         </div>
 
         <h2 className="font-cinzel font-bold text-3xl md:text-5xl text-center text-foreground mb-6 leading-tight">
+          They named it. They named it again.
+          <br />
+          <span className="text-gold glow-gold-sm">Then we named it.</span>
+        </h2>
+
+        <p className="font-garamond text-center text-muted-foreground text-lg md:text-xl mb-16 max-w-2xl mx-auto leading-relaxed">
+          Two studios. Two titles. Forty years of burial. One word ends it.
+        </p>
+
+        {/* Trilogy block */}
+        <div className="mb-20 space-y-px">
+          {trilogy.map((entry, i) => (
+            <div
+              key={entry.title}
+              className="relative flex flex-col md:flex-row md:items-center gap-4 md:gap-0 px-8 py-7 overflow-hidden"
+              style={{
+                background:
+                  entry.variant === "gold"
+                    ? "linear-gradient(135deg, hsl(var(--void)) 0%, hsl(var(--ash)) 100%)"
+                    : "hsl(var(--void))",
+                borderLeft: `3px solid ${
+                  entry.variant === "gold"
+                    ? "hsl(var(--gold))"
+                    : "hsl(var(--blood) / 0.5)"
+                }`,
+              }}
+            >
+              {/* Top shimmer */}
+              {entry.variant === "gold" && (
+                <div
+                  className="absolute top-0 left-0 right-0 h-px"
+                  style={{ background: "linear-gradient(90deg, hsl(var(--gold) / 0.6), transparent)" }}
+                />
+              )}
+
+              {/* Step number */}
+              <span
+                className="font-cinzel text-[10px] tracking-[0.4em] uppercase shrink-0 md:w-6 md:mr-8 opacity-40"
+                style={{
+                  color: entry.variant === "gold" ? "hsl(var(--gold))" : "hsl(var(--muted-foreground))",
+                }}
+              >
+                {String(i + 1).padStart(2, "0")}
+              </span>
+
+              {/* Title */}
+              <div className="shrink-0 md:w-64 md:mr-10">
+                <span
+                  className={`font-cinzel-deco font-black text-2xl md:text-3xl tracking-wider leading-none ${entry.variant === "gold" ? "glow-gold" : ""}`}
+                  style={{
+                    color:
+                      entry.variant === "gold"
+                        ? "hsl(var(--gold))"
+                        : "hsl(var(--blood-bright) / 0.6)",
+                  }}
+                >
+                  {entry.title}
+                </span>
+                <p
+                  className="font-cinzel text-[9px] tracking-[0.4em] uppercase mt-1"
+                  style={{
+                    color:
+                      entry.variant === "gold"
+                        ? "hsl(var(--gold) / 0.5)"
+                        : "hsl(var(--muted-foreground) / 0.6)",
+                  }}
+                >
+                  {entry.studio}
+                </p>
+              </div>
+
+              {/* Divider */}
+              <div
+                className="hidden md:block shrink-0 mx-6 h-8 w-px"
+                style={{
+                  background:
+                    entry.variant === "gold"
+                      ? "hsl(var(--gold) / 0.25)"
+                      : "hsl(var(--border))",
+                }}
+              />
+
+              {/* Verdict */}
+              <p
+                className="font-garamond italic text-base md:text-lg flex-1"
+                style={{
+                  color:
+                    entry.variant === "gold"
+                      ? "hsl(var(--foreground))"
+                      : "hsl(var(--muted-foreground))",
+                }}
+              >
+                {entry.verdict}
+              </p>
+
+              {/* Year badge */}
+              <span
+                className="shrink-0 md:ml-8 font-cinzel text-xs tracking-widest"
+                style={{
+                  color:
+                    entry.variant === "gold"
+                      ? "hsl(var(--gold))"
+                      : "hsl(var(--muted-foreground) / 0.5)",
+                }}
+              >
+                {entry.year}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* Every Studio Had a Motive sub-heading */}
+        <div className="flex items-center gap-4 mb-10">
+          <div className="gold-line flex-1 opacity-40" />
+          <span className="font-cinzel text-[10px] tracking-[0.5em] text-muted-foreground uppercase">
+            The Pattern
+          </span>
+          <div className="gold-line flex-1 opacity-40" />
+        </div>
+
+        <h3 className="font-cinzel font-bold text-2xl md:text-4xl text-center text-foreground mb-6 leading-tight">
           Every Studio Had a Motive.
           <br />
           <span className="text-gold glow-gold-sm">We Have None.</span>
-        </h2>
+        </h3>
 
         <p className="font-garamond text-center text-muted-foreground text-lg md:text-xl mb-20 max-w-2xl mx-auto leading-relaxed">
           That is not a weakness. That is the only credential that matters.
