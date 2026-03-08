@@ -105,10 +105,10 @@ export default function TrinitySection() {
           <div className="relative group" style={{ borderRight: "1px solid hsl(var(--border))" }}>
             <div className="relative overflow-hidden aspect-[3/4]">
               <img
-                src={adamHeman}
+                src={trio}
                 alt="Adam — The Social Self"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "left center", filter: "saturate(0.6) brightness(0.75)" }}
+                style={{ objectPosition: "15% center", filter: "saturate(0.6) brightness(0.75)" }}
               />
               {/* Bone dim overlay */}
               <div
