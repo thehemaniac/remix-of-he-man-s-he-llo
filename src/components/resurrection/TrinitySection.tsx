@@ -1,5 +1,4 @@
-import adamHeman from "@/assets/adam-heman.png";
-import skeletor from "@/assets/skeletor.png";
+import trio from "@/assets/trio.png";
 
 export default function TrinitySection() {
   const columns = [
@@ -106,10 +105,10 @@ export default function TrinitySection() {
           <div className="relative group" style={{ borderRight: "1px solid hsl(var(--border))" }}>
             <div className="relative overflow-hidden aspect-[3/4]">
               <img
-                src={adamHeman}
+                src={trio}
                 alt="Adam — The Social Self"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "left center", filter: "saturate(0.6) brightness(0.75)" }}
+                style={{ objectPosition: "15% center", filter: "saturate(0.6) brightness(0.75)" }}
               />
               {/* Bone dim overlay */}
               <div
@@ -133,10 +132,10 @@ export default function TrinitySection() {
           <div className="relative group" style={{ borderRight: "1px solid hsl(var(--border))" }}>
             <div className="relative overflow-hidden aspect-[3/4]">
               <img
-                src={adamHeman}
+                src={trio}
                 alt="He-Man — The Integrated Warrior"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "right center" }}
+                style={{ objectPosition: "50% center" }}
               />
               {/* Gold glow overlay */}
               <div
@@ -165,10 +164,10 @@ export default function TrinitySection() {
           <div className="relative group">
             <div className="relative overflow-hidden aspect-[3/4]">
               <img
-                src={skeletor}
+                src={trio}
                 alt="Skeletor — The Reptilian Shadow"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "center center" }}
+                style={{ objectPosition: "85% center" }}
               />
               {/* Blue cold overlay */}
               <div
