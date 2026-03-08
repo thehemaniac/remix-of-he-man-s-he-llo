@@ -89,6 +89,28 @@ export default function HeroSection() {
         <p className="font-cinzel text-xs tracking-[0.4em] mt-4 text-gold uppercase opacity-70">
           The Resurrection
         </p>
+        <div className="mt-8 flex items-center justify-center gap-3 md:gap-5">
+          <span
+            className="font-cinzel text-[10px] md:text-xs tracking-[0.35em] uppercase"
+            style={{ color: "hsl(var(--blood-bright))", opacity: 0.7 }}
+          >
+            Revelation
+          </span>
+          <span className="text-muted-foreground opacity-30 text-xs">·</span>
+          <span
+            className="font-cinzel text-[10px] md:text-xs tracking-[0.35em] uppercase"
+            style={{ color: "hsl(var(--blood-bright))", opacity: 0.7 }}
+          >
+            Revolution
+          </span>
+          <span className="text-muted-foreground opacity-30 text-xs">·</span>
+          <span
+            className="font-cinzel text-[10px] md:text-xs tracking-[0.35em] uppercase glow-gold-sm"
+            style={{ color: "hsl(var(--gold))" }}
+          >
+            Resurrection
+          </span>
+        </div>
       </div>
 
       {/* Scroll indicator */}
