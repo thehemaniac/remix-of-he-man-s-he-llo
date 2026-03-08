@@ -132,10 +132,10 @@ export default function TrinitySection() {
           <div className="relative group" style={{ borderRight: "1px solid hsl(var(--border))" }}>
             <div className="relative overflow-hidden aspect-[3/4]">
               <img
-                src={adamHeman}
+                src={trio}
                 alt="He-Man — The Integrated Warrior"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "right center" }}
+                style={{ objectPosition: "50% center" }}
               />
               {/* Gold glow overlay */}
               <div
