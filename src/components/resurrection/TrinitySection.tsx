@@ -102,11 +102,11 @@ export default function TrinitySection() {
         {/* Trinity image panel — full-width panoramic with overlay labels */}
         <div className="relative mb-20 overflow-hidden" style={{ border: "1px solid hsl(var(--border))" }}>
           {/* Full-width trio image */}
-          <div className="relative w-full aspect-[21/9]">
+          <div className="relative w-full aspect-[16/9]">
             <img
               src={trio}
               alt="Adam, He-Man, and Skeletor — Three Names, One Body"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-top"
             />
             {/* Bottom fade */}
             <div
