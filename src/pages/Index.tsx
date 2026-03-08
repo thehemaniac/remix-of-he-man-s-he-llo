@@ -50,6 +50,11 @@ const Index = () => {
           <TaylorSection />
         </section>
 
+        {/* The Authority — No Commission */}
+        <section id="authority">
+          <NoCommissionSection />
+        </section>
+
         {/* The Manifesto */}
         <section id="manifesto">
           <ManifestoSection />
