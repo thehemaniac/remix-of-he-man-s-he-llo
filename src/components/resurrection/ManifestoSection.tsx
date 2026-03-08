@@ -61,6 +61,16 @@ export default function ManifestoSection() {
           <p className="font-cinzel font-bold text-2xl md:text-3xl text-gold glow-gold tracking-widest">
             I HAVE THE POWER.
           </p>
+          <div className="gold-line opacity-30" />
+          <p className="font-garamond italic text-xl md:text-2xl leading-relaxed" style={{ color: "hsl(var(--bone))", opacity: 0.85 }}>
+            If you were 8 years old in 1983, you understood something your parents did not explain.
+            You felt the weight of the transformation. You felt the choice it represented.
+          </p>
+          <div className="gold-line opacity-30" />
+          <p className="font-garamond text-xl md:text-2xl leading-relaxed">
+            You were right.{" "}
+            <span className="text-gold font-bold">This is that film — finally made for who you are now.</span>
+          </p>
         </div>
 
         {/* Bottom rule */}

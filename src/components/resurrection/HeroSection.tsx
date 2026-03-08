@@ -89,6 +89,14 @@ export default function HeroSection() {
         <p className="font-cinzel text-xs tracking-[0.4em] mt-4 text-gold uppercase opacity-70">
           The Resurrection
         </p>
+        <div className="mt-8 border border-gold border-opacity-20 px-8 py-5 max-w-sm mx-auto" style={{ borderColor: "hsl(var(--gold) / 0.2)" }}>
+          <p className="font-cinzel text-[9px] tracking-[0.45em] uppercase leading-loose" style={{ color: "hsl(var(--bone))", opacity: 0.7 }}>
+            For the ones who grew up with him.<br />
+            Not a reboot. Not a reimagining.<br />
+            A motion picture that tells the truth<br />
+            that was always there.
+          </p>
+        </div>
         <div className="mt-8 flex items-center justify-center gap-3 md:gap-5">
           <span
             className="font-cinzel text-[10px] md:text-xs tracking-[0.35em] uppercase"

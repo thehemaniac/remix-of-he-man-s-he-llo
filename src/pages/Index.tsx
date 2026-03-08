@@ -26,6 +26,11 @@ const Index = () => {
           <TheNameSection />
         </section>
 
+        {/* The Trinity — Three faces, one body */}
+        <section id="trinity">
+          <TrinitySection />
+        </section>
+
         {/* The Origin — Series Bible clues */}
         <section id="origin">
           <OriginSection />
