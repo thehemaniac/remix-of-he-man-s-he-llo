@@ -164,10 +164,10 @@ export default function TrinitySection() {
           <div className="relative group">
             <div className="relative overflow-hidden aspect-[3/4]">
               <img
-                src={skeletor}
+                src={trio}
                 alt="Skeletor — The Reptilian Shadow"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "center center" }}
+                style={{ objectPosition: "85% center" }}
               />
               {/* Blue cold overlay */}
               <div
