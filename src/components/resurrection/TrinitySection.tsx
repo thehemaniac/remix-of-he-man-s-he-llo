@@ -168,7 +168,7 @@ export default function TrinitySection() {
                 src={skeletor}
                 alt="Skeletor — The Reptilian Shadow"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "center top" }}
+                style={{ objectPosition: "center center" }}
               />
               {/* Blue cold overlay */}
               <div
