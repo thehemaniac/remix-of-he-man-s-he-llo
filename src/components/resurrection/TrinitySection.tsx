@@ -99,101 +99,60 @@ export default function TrinitySection() {
           </span>
         </div>
 
-        {/* Trinity image panel */}
-        <div className="grid grid-cols-3 gap-0 mb-20 relative overflow-hidden" style={{ borderColor: "hsl(var(--border))" }}>
-          {/* ADAM */}
-          <div className="relative group" style={{ borderRight: "1px solid hsl(var(--border))" }}>
-            <div className="relative overflow-hidden aspect-[3/4]">
-              <img
-                src={trio}
-                alt="Adam — The Social Self"
-                className="w-full h-full object-cover"
-                style={{ objectPosition: "15% center", filter: "saturate(0.6) brightness(0.75)" }}
-              />
-              {/* Bone dim overlay */}
-              <div
-                className="absolute inset-0"
-                style={{ background: "linear-gradient(180deg, transparent 40%, hsl(var(--void) / 0.85) 100%)" }}
-              />
-              {/* Top border accent */}
-              <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: "hsl(var(--bone) / 0.5)" }} />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
-              <p className="font-cinzel-deco font-black text-2xl md:text-3xl" style={{ color: "hsl(var(--bone))", opacity: 0.7 }}>
+        {/* Trinity image panel — full-width panoramic with overlay labels */}
+        <div className="relative mb-20 overflow-hidden" style={{ border: "1px solid hsl(var(--border))" }}>
+          {/* Full-width trio image */}
+          <div className="relative w-full aspect-[21/9]">
+            <img
+              src={trio}
+              alt="Adam, He-Man, and Skeletor — Three Names, One Body"
+              className="w-full h-full object-cover object-center"
+            />
+            {/* Bottom fade */}
+            <div
+              className="absolute inset-0"
+              style={{ background: "linear-gradient(180deg, transparent 50%, hsl(var(--void) / 0.9) 100%)" }}
+            />
+            {/* Top gold line */}
+            <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: "linear-gradient(90deg, hsl(var(--bone) / 0.6), hsl(var(--gold) / 0.9), hsl(var(--reptile) / 0.7))", boxShadow: "0 0 12px hsl(var(--gold) / 0.4)" }} />
+
+            {/* Vertical dividers */}
+            <div className="absolute top-0 bottom-0 left-1/3 w-px" style={{ background: "hsl(var(--border) / 0.5)" }} />
+            <div className="absolute top-0 bottom-0 left-2/3 w-px" style={{ background: "hsl(var(--border) / 0.5)" }} />
+
+            {/* ADAM label — left third */}
+            <div className="absolute bottom-4 left-0 w-1/3 text-center px-4">
+              <p className="font-cinzel-deco font-black text-xl md:text-3xl" style={{ color: "hsl(var(--bone))", opacity: 0.75 }}>
                 ADAM
               </p>
-              <p className="font-cinzel text-[9px] tracking-[0.3em] uppercase" style={{ color: "hsl(var(--bone))", opacity: 0.4 }}>
+              <p className="font-cinzel text-[9px] tracking-[0.3em] uppercase" style={{ color: "hsl(var(--bone))", opacity: 0.45 }}>
                 The Social Self
               </p>
             </div>
-          </div>
 
-          {/* HE-MAN */}
-          <div className="relative group" style={{ borderRight: "1px solid hsl(var(--border))" }}>
-            <div className="relative overflow-hidden aspect-[3/4]">
-              <img
-                src={trio}
-                alt="He-Man — The Integrated Warrior"
-                className="w-full h-full object-cover"
-                style={{ objectPosition: "50% center" }}
-              />
-              {/* Gold glow overlay */}
-              <div
-                className="absolute inset-0"
-                style={{ background: "linear-gradient(180deg, transparent 40%, hsl(var(--void) / 0.85) 100%)" }}
-              />
-              {/* Gold glow top border */}
-              <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: "hsl(var(--gold) / 0.9)", boxShadow: "0 0 12px hsl(var(--gold) / 0.6)" }} />
-              {/* Subtle gold vignette */}
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{ boxShadow: "inset 0 0 60px hsl(var(--gold) / 0.08)" }}
-              />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
-              <p className="font-cinzel-deco font-black text-2xl md:text-3xl glow-gold" style={{ color: "hsl(var(--gold))" }}>
+            {/* HE-MAN label — center third */}
+            <div className="absolute bottom-4 left-1/3 w-1/3 text-center px-4">
+              <p className="font-cinzel-deco font-black text-xl md:text-3xl glow-gold" style={{ color: "hsl(var(--gold))" }}>
                 HE-MAN
               </p>
-              <p className="font-cinzel text-[9px] tracking-[0.3em] uppercase" style={{ color: "hsl(var(--gold))", opacity: 0.6 }}>
+              <p className="font-cinzel text-[9px] tracking-[0.3em] uppercase" style={{ color: "hsl(var(--gold))", opacity: 0.65 }}>
                 The Integrated Warrior
               </p>
             </div>
-          </div>
 
-          {/* SKELETOR */}
-          <div className="relative group">
-            <div className="relative overflow-hidden aspect-[3/4]">
-              <img
-                src={trio}
-                alt="Skeletor — The Reptilian Shadow"
-                className="w-full h-full object-cover"
-                style={{ objectPosition: "85% center" }}
-              />
-              {/* Blue cold overlay */}
-              <div
-                className="absolute inset-0"
-                style={{ background: "linear-gradient(180deg, transparent 40%, hsl(var(--void) / 0.85) 100%)" }}
-              />
-              {/* Reptile top border */}
-              <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: "hsl(var(--reptile) / 0.8)" }} />
-              {/* Blue cold vignette */}
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{ boxShadow: "inset 0 0 60px hsl(var(--reptile) / 0.12)" }}
-              />
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
-              <p className="font-cinzel-deco font-black text-2xl md:text-3xl" style={{ color: "hsl(var(--reptile))" }}>
+            {/* SKELETOR label — right third */}
+            <div className="absolute bottom-4 left-2/3 w-1/3 text-center px-4">
+              <p className="font-cinzel-deco font-black text-xl md:text-3xl" style={{ color: "hsl(var(--reptile))" }}>
                 SKELETOR
               </p>
-              <p className="font-cinzel text-[9px] tracking-[0.3em] uppercase" style={{ color: "hsl(var(--reptile))", opacity: 0.6 }}>
+              <p className="font-cinzel text-[9px] tracking-[0.3em] uppercase" style={{ color: "hsl(var(--reptile))", opacity: 0.65 }}>
                 The Reptilian Shadow
               </p>
             </div>
           </div>
 
           {/* Bottom caption */}
-          <div className="col-span-3 pt-4 pb-2 text-center border-t" style={{ borderColor: "hsl(var(--border))" }}>
+          <div className="pt-4 pb-3 text-center border-t" style={{ borderColor: "hsl(var(--border))" }}>
             <span className="font-garamond italic text-muted-foreground text-sm">
               Same body. Same fire. Three skins. The only variable is the choice.
             </span>
