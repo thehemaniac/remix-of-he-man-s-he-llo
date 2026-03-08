@@ -48,6 +48,7 @@
     --bone: 43 30% 78%;
     --blood: 10 80% 35%;
     --blood-bright: 0 70% 50%;
+    --reptile: 210 80% 45%;
 
     /* Gradients */
     --gradient-void: linear-gradient(180deg, hsl(0 0% 0%) 0%, hsl(0 0% 4%) 100%);
