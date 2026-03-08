@@ -1,6 +1,7 @@
 export default function NavBar() {
   const sections = [
     { label: "The Name", href: "#name" },
+    { label: "Trinity", href: "#trinity" },
     { label: "Origin", href: "#origin" },
     { label: "Bloodline", href: "#bloodline" },
     { label: "Grayskull", href: "#grayskull" },

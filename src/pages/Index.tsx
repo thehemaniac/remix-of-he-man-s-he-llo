@@ -1,6 +1,7 @@
 import NavBar from "@/components/resurrection/NavBar";
 import HeroSection from "@/components/resurrection/HeroSection";
 import TheNameSection from "@/components/resurrection/TheNameSection";
+import TrinitySection from "@/components/resurrection/TrinitySection";
 import OriginSection from "@/components/resurrection/OriginSection";
 import BloodlineSection from "@/components/resurrection/BloodlineSection";
 import GrayskullSection from "@/components/resurrection/GrayskullSection";
@@ -23,6 +24,11 @@ const Index = () => {
         {/* The Name — HE vs MAN */}
         <section id="name">
           <TheNameSection />
+        </section>
+
+        {/* The Trinity — Three faces, one body */}
+        <section id="trinity">
+          <TrinitySection />
         </section>
 
         {/* The Origin — Series Bible clues */}

@@ -65,6 +65,7 @@ export default {
         bone: "hsl(var(--bone))",
         blood: "hsl(var(--blood))",
         "blood-bright": "hsl(var(--blood-bright))",
+        reptile: "hsl(var(--reptile))",
       },
       fontFamily: {
         cinzel: ["Cinzel", "serif"],
