@@ -5,6 +5,7 @@ export default function NavBar() {
     { label: "Bloodline", href: "#bloodline" },
     { label: "Grayskull", href: "#grayskull" },
     { label: "Episodes", href: "#episodes" },
+    { label: "Authority", href: "#authority" },
     { label: "Manifesto", href: "#manifesto" },
   ];
 
