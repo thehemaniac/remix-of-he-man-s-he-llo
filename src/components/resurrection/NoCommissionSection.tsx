@@ -1,3 +1,30 @@
+const trilogy = [
+  {
+    title: "REVELATION",
+    year: "2021",
+    studio: "Netflix · Kevin Smith",
+    verdict: "He-Man died in Episode 1. The story became Teela's.",
+    sub: "He-Man revealed as a lie. Then killed.",
+    variant: "blood",
+  },
+  {
+    title: "REVOLUTION",
+    year: "2024",
+    studio: "Netflix · Sequel Series",
+    verdict: "He-Man remained the vehicle. Still not his story.",
+    sub: "A new direction. Still not his story.",
+    variant: "blood",
+  },
+  {
+    title: "RESURRECTION",
+    year: "—",
+    studio: "No Studio · No Commission",
+    verdict: "He-Man is the destination. Canon. Only canon.",
+    sub: "The word that ends the trilogy. The retrieval.",
+    variant: "gold",
+  },
+];
+
 export default function NoCommissionSection() {
   const studios = [
     {
