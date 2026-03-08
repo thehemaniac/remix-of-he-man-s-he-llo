@@ -6,6 +6,7 @@ import BloodlineSection from "@/components/resurrection/BloodlineSection";
 import GrayskullSection from "@/components/resurrection/GrayskullSection";
 import EpisodesSection from "@/components/resurrection/EpisodesSection";
 import TaylorSection from "@/components/resurrection/TaylorSection";
+import NoCommissionSection from "@/components/resurrection/NoCommissionSection";
 import ManifestoSection from "@/components/resurrection/ManifestoSection";
 
 const Index = () => {
