@@ -1,5 +1,4 @@
-import adamHeman from "@/assets/adam-heman.png";
-import skeletor from "@/assets/skeletor.png";
+import trio from "@/assets/trio.png";
 
 export default function TrinitySection() {
   const columns = [
