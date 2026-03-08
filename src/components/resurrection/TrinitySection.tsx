@@ -1,3 +1,6 @@
+import adamHeman from "@/assets/adam-heman.png";
+import skeletor from "@/assets/skeletor.png";
+
 export default function TrinitySection() {
   const columns = [
     {
@@ -84,7 +87,7 @@ export default function TrinitySection() {
         </div>
 
         {/* Visual proof: identical costume */}
-        <div className="flex items-center justify-center gap-6 mb-20 flex-wrap">
+        <div className="flex items-center justify-center gap-6 mb-12 flex-wrap">
           {["Chest Armor", "Boots", "Loincloth", "Build", "Height"].map((item) => (
             <div key={item} className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rotate-45" style={{ background: "hsl(var(--gold))", opacity: 0.5 }} />
@@ -95,6 +98,107 @@ export default function TrinitySection() {
           <span className="font-garamond italic text-muted-foreground text-sm w-full text-center -mt-2">
             Identical in every detail. The only variable: the skin, the claws, and the sword.
           </span>
+        </div>
+
+        {/* Trinity image panel */}
+        <div className="grid grid-cols-3 gap-0 mb-20 relative overflow-hidden" style={{ borderColor: "hsl(var(--border))" }}>
+          {/* ADAM */}
+          <div className="relative group" style={{ borderRight: "1px solid hsl(var(--border))" }}>
+            <div className="relative overflow-hidden aspect-[3/4]">
+              <img
+                src={adamHeman}
+                alt="Adam — The Social Self"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: "left center", filter: "saturate(0.6) brightness(0.75)" }}
+              />
+              {/* Bone dim overlay */}
+              <div
+                className="absolute inset-0"
+                style={{ background: "linear-gradient(180deg, transparent 40%, hsl(var(--void) / 0.85) 100%)" }}
+              />
+              {/* Top border accent */}
+              <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: "hsl(var(--bone) / 0.5)" }} />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
+              <p className="font-cinzel-deco font-black text-2xl md:text-3xl" style={{ color: "hsl(var(--bone))", opacity: 0.7 }}>
+                ADAM
+              </p>
+              <p className="font-cinzel text-[9px] tracking-[0.3em] uppercase" style={{ color: "hsl(var(--bone))", opacity: 0.4 }}>
+                The Social Self
+              </p>
+            </div>
+          </div>
+
+          {/* HE-MAN */}
+          <div className="relative group" style={{ borderRight: "1px solid hsl(var(--border))" }}>
+            <div className="relative overflow-hidden aspect-[3/4]">
+              <img
+                src={adamHeman}
+                alt="He-Man — The Integrated Warrior"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: "right center" }}
+              />
+              {/* Gold glow overlay */}
+              <div
+                className="absolute inset-0"
+                style={{ background: "linear-gradient(180deg, transparent 40%, hsl(var(--void) / 0.85) 100%)" }}
+              />
+              {/* Gold glow top border */}
+              <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: "hsl(var(--gold) / 0.9)", boxShadow: "0 0 12px hsl(var(--gold) / 0.6)" }} />
+              {/* Subtle gold vignette */}
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{ boxShadow: "inset 0 0 60px hsl(var(--gold) / 0.08)" }}
+              />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
+              <p className="font-cinzel-deco font-black text-2xl md:text-3xl glow-gold" style={{ color: "hsl(var(--gold))" }}>
+                HE-MAN
+              </p>
+              <p className="font-cinzel text-[9px] tracking-[0.3em] uppercase" style={{ color: "hsl(var(--gold))", opacity: 0.6 }}>
+                The Integrated Warrior
+              </p>
+            </div>
+          </div>
+
+          {/* SKELETOR */}
+          <div className="relative group">
+            <div className="relative overflow-hidden aspect-[3/4]">
+              <img
+                src={skeletor}
+                alt="Skeletor — The Reptilian Shadow"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: "center top" }}
+              />
+              {/* Blue cold overlay */}
+              <div
+                className="absolute inset-0"
+                style={{ background: "linear-gradient(180deg, transparent 40%, hsl(var(--void) / 0.85) 100%)" }}
+              />
+              {/* Reptile top border */}
+              <div className="absolute top-0 left-0 right-0 h-0.5" style={{ background: "hsl(var(--reptile) / 0.8)" }} />
+              {/* Blue cold vignette */}
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{ boxShadow: "inset 0 0 60px hsl(var(--reptile) / 0.12)" }}
+              />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
+              <p className="font-cinzel-deco font-black text-2xl md:text-3xl" style={{ color: "hsl(var(--reptile))" }}>
+                SKELETOR
+              </p>
+              <p className="font-cinzel text-[9px] tracking-[0.3em] uppercase" style={{ color: "hsl(var(--reptile))", opacity: 0.6 }}>
+                The Reptilian Shadow
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom caption */}
+          <div className="col-span-3 pt-4 pb-2 text-center border-t" style={{ borderColor: "hsl(var(--border))" }}>
+            <span className="font-garamond italic text-muted-foreground text-sm">
+              Same body. Same fire. Three skins. The only variable is the choice.
+            </span>
+          </div>
         </div>
 
         {/* Three columns */}
