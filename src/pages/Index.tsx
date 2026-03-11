@@ -62,6 +62,11 @@ const Index = () => {
           <NoCommissionSection />
         </section>
 
+        {/* Canon Comparison Table */}
+        <section id="canon">
+          <CanonTableSection />
+        </section>
+
         {/* The Manifesto */}
         <section id="manifesto">
           <ManifestoSection />
