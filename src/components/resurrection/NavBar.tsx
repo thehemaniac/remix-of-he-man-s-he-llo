@@ -7,6 +7,7 @@ export default function NavBar() {
     { label: "Grayskull", href: "#grayskull" },
     { label: "Episodes", href: "#episodes" },
     { label: "Authority", href: "#authority" },
+    { label: "Canon", href: "#canon" },
     { label: "Manifesto", href: "#manifesto" },
   ];
 
