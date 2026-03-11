@@ -9,6 +9,7 @@ import EpisodesSection from "@/components/resurrection/EpisodesSection";
 import TaylorSection from "@/components/resurrection/TaylorSection";
 import NoCommissionSection from "@/components/resurrection/NoCommissionSection";
 import ManifestoSection from "@/components/resurrection/ManifestoSection";
+import CanonTableSection from "@/components/resurrection/CanonTableSection";
 
 const Index = () => {
   return (
