@@ -55,26 +55,26 @@ export default function TaylorSection() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-border">—</span>
-                    <span>Battle Cat was NEVER supposed to be comedic. Always serious. Always a war mount.</span>
+                    <span>Battle Cat was always meant to be serious. A true war mount. Ancient and powerful.</span>
                   </li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-cinzel font-bold text-gold text-sm tracking-widest mb-4 uppercase glow-gold-sm">
-                  What Corporate Did
+                  The Vision That Endures
                 </h3>
                 <ul className="space-y-3 font-garamond text-foreground text-base">
                   <li className="flex items-start gap-3">
                     <span className="text-gold">—</span>
-                    <span>Renamed Torak to Prince Adam. Added the pink vest. Made him a joke.</span>
+                    <span>The warrior beneath Adam was always Torak — the original name, the original soul.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-gold">—</span>
-                    <span>"A conscious effort to remove the concept from the original creator." — Taylor's own words.</span>
+                    <span>Taylor's original concept is the foundation upon which this universe is built.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-gold">—</span>
-                    <span>Mark Taylor is now writing the original Torak prequel himself. The truth will not stay buried.</span>
+                    <span>Mark Taylor is now writing the original Torak prequel himself. The vision lives on.</span>
                   </li>
                 </ul>
               </div>
@@ -101,9 +101,9 @@ export default function TaylorSection() {
           {/* The resurrection thesis */}
           <div className="text-center">
             <p className="font-garamond text-muted-foreground text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto">
-              The Resurrection is not a reboot. It is not a reimagining. It is the retrieval of what 
-              was always there — the <span className="text-gold">original signal</span> beneath 40 years of corporate packaging, 
-              now finally given the cinematic truth it was always owed.
+              The Resurrection is an original universe — built in honor of what Taylor always envisioned.
+              The <span className="text-gold">original signal</span>, carried forward with the full weight of 
+              the mythology it always deserved.
             </p>
           </div>
         </div>

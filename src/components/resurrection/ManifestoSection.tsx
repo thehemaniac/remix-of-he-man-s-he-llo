@@ -53,9 +53,9 @@ export default function ManifestoSection() {
           </p>
           <div className="gold-line opacity-30" />
           <p>
-            <span className="text-gold font-bold">We are not creating a new story.</span><br />
-            We are following the clues the creators buried — and making the truth they always intended, 
-            finally, undeniably, irrevocably real.
+            <span className="text-gold font-bold">We built a universe.</span><br />
+            Inspired by the truth that was always there — honoring what the original creators envisioned,
+            finally, undeniably, irrevocably given its cinematic form.
           </p>
           <div className="gold-line opacity-30" />
           <p className="font-cinzel font-bold text-2xl md:text-3xl text-gold glow-gold tracking-widest">
@@ -83,9 +83,9 @@ export default function ManifestoSection() {
         {/* Canon foundation */}
         <div className="mt-10 grid grid-cols-3 gap-4 text-center">
           {[
-            { label: "Series Bible", date: "1982" },
-            { label: "Episodes Analyzed", date: "4 Key Canon Sources" },
-            { label: "Mark Taylor's Vision", date: "Original Creator" },
+            { label: "Filmation Series", date: "1983" },
+            { label: "Original Creator", date: "Mark Taylor" },
+            { label: "Original Property", date: "Mattel" },
           ].map((item) => (
             <div key={item.label} className="border border-border p-4 hover:border-gold transition-colors duration-500">
               <p className="font-cinzel font-bold text-gold text-xs tracking-widest mb-1">{item.date}</p>

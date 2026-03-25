@@ -30,7 +30,7 @@ export default function HeroSection() {
         className={`font-cinzel text-xs tracking-[0.5em] text-muted-foreground uppercase mb-8 transition-all duration-700 ${revealed ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         style={{ transitionDelay: "100ms" }}
       >
-        Canon Decoded · 1982 — Present
+        An Original Universe · He-Maniac
       </p>
 
       {/* HE — MAN split */}
@@ -100,23 +100,23 @@ export default function HeroSection() {
         <div className="mt-8 flex items-center justify-center gap-3 md:gap-5">
           <span
             className="font-cinzel text-[10px] md:text-xs tracking-[0.35em] uppercase"
-            style={{ color: "hsl(var(--blood-bright))", opacity: 0.7 }}
+            style={{ color: "hsl(var(--bone))", opacity: 0.5 }}
           >
-            Revelation
+            Inspired by 1983
           </span>
           <span className="text-muted-foreground opacity-30 text-xs">·</span>
           <span
             className="font-cinzel text-[10px] md:text-xs tracking-[0.35em] uppercase"
-            style={{ color: "hsl(var(--blood-bright))", opacity: 0.7 }}
+            style={{ color: "hsl(var(--bone))", opacity: 0.5 }}
           >
-            Revolution
+            Mark Taylor
           </span>
           <span className="text-muted-foreground opacity-30 text-xs">·</span>
           <span
             className="font-cinzel text-[10px] md:text-xs tracking-[0.35em] uppercase glow-gold-sm"
             style={{ color: "hsl(var(--gold))" }}
           >
-            Resurrection
+            He-Maniac
           </span>
         </div>
       </div>
