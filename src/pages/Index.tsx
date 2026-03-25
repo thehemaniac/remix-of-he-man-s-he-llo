@@ -7,9 +7,7 @@ import BloodlineSection from "@/components/resurrection/BloodlineSection";
 import GrayskullSection from "@/components/resurrection/GrayskullSection";
 import EpisodesSection from "@/components/resurrection/EpisodesSection";
 import TaylorSection from "@/components/resurrection/TaylorSection";
-import NoCommissionSection from "@/components/resurrection/NoCommissionSection";
 import ManifestoSection from "@/components/resurrection/ManifestoSection";
-import CanonTableSection from "@/components/resurrection/CanonTableSection";
 
 const Index = () => {
   return (
@@ -32,7 +30,7 @@ const Index = () => {
           <TrinitySection />
         </section>
 
-        {/* The Origin — Series Bible clues */}
+        {/* The Origin — Series Bible */}
         <section id="origin">
           <OriginSection />
         </section>
@@ -42,12 +40,12 @@ const Index = () => {
           <BloodlineSection />
         </section>
 
-        {/* Castle Grayskull — The testament */}
+        {/* Castle Grayskull — Sacred space */}
         <section id="grayskull">
           <GrayskullSection />
         </section>
 
-        {/* Key Episodes — Canon sources */}
+        {/* The Source — Inspiration */}
         <section id="episodes">
           <EpisodesSection />
         </section>
@@ -55,16 +53,6 @@ const Index = () => {
         {/* Mark Taylor — The original creator */}
         <section id="taylor">
           <TaylorSection />
-        </section>
-
-        {/* The Authority — No Commission */}
-        <section id="authority">
-          <NoCommissionSection />
-        </section>
-
-        {/* Canon Comparison Table */}
-        <section id="canon">
-          <CanonTableSection />
         </section>
 
         {/* The Manifesto */}
@@ -79,11 +67,14 @@ const Index = () => {
           He-Man: The Resurrection
         </p>
         <p className="font-garamond italic text-muted-foreground text-sm">
-          Grounded entirely in canon. No invention. No fabrication. Only retrieval.
+          An original universe inspired by the 1983 Filmation series.
+        </p>
+        <p className="font-cinzel text-[8px] tracking-[0.35em] text-muted-foreground uppercase mt-2 opacity-60">
+          Characters created by Mark Taylor · Originally produced for Mattel
         </p>
         <div className="mt-6 flex items-center justify-center gap-4">
           <div className="gold-line w-24 opacity-30" />
-          <div className="w-1.5 h-1.5 rotate-45 bg-gold opacity-40" style={{ background: "hsl(var(--gold))" }} />
+          <div className="w-1.5 h-1.5 rotate-45 opacity-40" style={{ background: "hsl(var(--gold))" }} />
           <div className="gold-line w-24 opacity-30" />
         </div>
       </footer>
