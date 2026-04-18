@@ -1,74 +1,22 @@
 
-## Strategic Pivot Analysis
+The user wants a downloadable single-file HTML version of the current site. Since this is a React + Vite + Tailwind app with many components, the cleanest way to deliver a true static HTML file is to build the project (`npm run build`) and then inline the generated CSS and JS into the resulting `dist/index.html` so it works as a single self-contained file.
 
-The user has made a clear strategic decision:
-- **Stop positioning against other productions** (no more Revelation vs Revolution vs Resurrection comparisons)
-- **Act like a studio** — Warner Bros doesn't justify their Batman by attacking other Batmans
-- **Present The Resurrection as its own universe** — inspired by the original 1983 Filmation series and Mattel's creation
-- **Credits, not complaints** — honor original creators, don't mention MGM, Netflix, Kevin Smith
-- **he-maniac.com + GitHub + Netlify** = the deployment stack
+## Plan
 
-## What Must Change
+1. Run `npm run build` to produce the production `dist/` output.
+2. Inline the built CSS and JS bundles into `dist/index.html` so it works offline as one file (no external asset requests, except Google Fonts which stay as a CDN link).
+3. Update the `<title>` and meta tags to "He-Man: The Resurrection" so the downloaded file is properly branded.
+4. Save the final file to `/mnt/documents/he-man-resurrection.html`.
+5. QA: open the file, verify size is reasonable, and spot-check that markup contains the expected sections (Hero, Trinity, Origin, Bloodline, Grayskull, Source, Creator, Manifesto).
+6. Deliver via `<lov-artifact>` so the user can download it.
 
-**REMOVE entirely (they only exist to compare/attack):**
-1. `NoCommissionSection` — entire section is built around criticizing Revelation, Revolution, Kevin Smith. Completely incompatible with the new positioning.
-2. `CanonTableSection` — the entire table scores other productions. Directly contradicts the "we don't mention other productions" philosophy.
+## Notes / Caveats
 
-**UPDATE (contains comparison language to strip out):**
-3. `HeroSection` — has "Revelation · Revolution · Resurrection" trio at the bottom + "Canon Decoded · 1982 — Present" pre-title. Strip those references.
-4. `ManifestoSection` — "We are not creating a new story. We are following the clues..." contradicts the new framing of presenting an original universe. Update to universe declaration language.
-5. `TaylorSection` — mostly good (credits the original creator, which fits) but has "What Corporate Did" framing. Soften slightly — credit Mattel/Filmation as inspiration, don't position against them.
-6. `NavBar` — remove "Authority" link (NoCommissionSection) and "Canon" link (CanonTableSection). Update remaining section labels to fit universe framing.
-7. `Index.tsx` — remove the two sections, update footer (currently says "No invention. No fabrication. Only retrieval." — this contradicts presenting a new universe).
+- The result is a single `.html` file the user can double-click to open in any browser.
+- Google Fonts (Cinzel, EB Garamond) will load from the CDN when online. Offline, the site falls back to system serif fonts but stays readable.
+- Images referenced from `/public` (placeholder.svg etc.) will be inlined as base64 if used; otherwise the file remains fully self-contained.
+- This is a static snapshot — smooth-scroll nav links and CSS animations work, but it is not connected to the live project, so future site edits will not update this file (we can regenerate on request).
 
-**KEEP (all valid in new framing):**
-- `HeroSection` (after cleanup)
-- `TheNameSection` — decoding the name is universe lore
-- `TrinitySection` — the three-state soul model is universe mythology
-- `OriginSection` — origin story fits perfectly
-- `BloodlineSection` — keeps, it's character mythology
-- `GrayskullSection` — keeps, sacred space of the universe
-- `EpisodesSection` — frame as "the source material that inspired this universe" rather than "canon proof"
-- `TaylorSection` — keep, credits original creator
-- `ManifestoSection` — keep, update tone
+## Files Touched
 
-## Files to Change
-
-### 1. `src/pages/Index.tsx`
-- Remove `NoCommissionSection` import and `<section id="authority">`
-- Remove `CanonTableSection` import and `<section id="canon">`
-- Update footer text: remove "No invention. No fabrication. Only retrieval." → replace with "An original universe inspired by the 1983 Filmation series. Characters created by Mark Taylor for Mattel."
-
-### 2. `src/components/resurrection/NavBar.tsx`
-- Remove "Authority" link
-- Remove "Canon" link
-- Remaining nav: Name · Trinity · Origin · Bloodline · Grayskull · Episodes · Manifesto
-
-### 3. `src/components/resurrection/HeroSection.tsx`
-- Remove "Canon Decoded · 1982 — Present" pre-title → replace with universe positioning line
-- Remove the "Revelation · Revolution · Resurrection" trio at the bottom
-- Replace with creative universe statement: "An original universe" or "He-Man: The Resurrection"
-
-### 4. `src/components/resurrection/ManifestoSection.tsx`
-- Remove "We are not creating a new story. We are following the clues..." → this contradicts presenting a universe
-- Replace with: "We built a universe. Inspired by the truth that was always there."
-- Update the three stats boxes: remove "4 Key Canon Sources" → replace with universe credits (Filmation 1983, Mark Taylor, Mattel)
-- Keep "I HAVE THE POWER." — this is universe language, not comparison language
-
-### 5. `src/components/resurrection/TaylorSection.tsx`
-- Remove "What Corporate Did" column heading and the adversarial framing
-- Keep the Taylor quotes (they're crediting the creator)
-- Replace "The Resurrection is not a reboot. It is not a reimagining. It is the retrieval..." → "The Resurrection is an original universe, built in honor of what Taylor always envisioned."
-
-## Deployment Plan (separate from site changes)
-The user wants: GitHub → Netlify → he-maniac.com
-
-This is a discussion item, not a code change. Quick guidance:
-- Connect to GitHub via Settings → GitHub
-- Netlify: connect GitHub repo, deploy as static site (`npm run build` → `dist/`)
-- he-maniac.com: point DNS to Netlify (CNAME `id.netlify.app`) rather than Lovable's IP
-
-## Summary of Changes
-- 2 sections removed (NoCommission, CanonTable)
-- 5 files updated (Index, NavBar, Hero, Manifesto, Taylor)
-- Net result: The site becomes a clean universe presentation — no comparisons, no positioning against other productions, credits to original creators
+- None in the project repo. Output goes to `/mnt/documents/he-man-resurrection.html`.
