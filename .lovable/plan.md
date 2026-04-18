@@ -1,32 +1,46 @@
 
 
-Swap the body font from `EB Garamond` to `Baloo 2` while keeping `Cinzel` / `Cinzel Decorative` for headings and the gold/void theme intact.
+Move the "Inspired by..." attribution from the homepage subline into the footer, and replace the homepage subline with a more evocative tagline.
+
+## Tagline options (will use #1 unless you prefer another)
+
+1. **A deep exploration into the Filmation universe (1983–1985)**
+2. A quiet study of the Filmation universe (1983–1985)
+3. Notes from inside the Filmation universe (1983–1985)
 
 ## Changes
 
-**1. `index.html`** — replace the Google Fonts `<link>` import (currently loads Cinzel + Cinzel Decorative + EB Garamond) so it also pulls Baloo 2 weights 400/500/600/700.
+**1. `src/pages/Home.tsx`**
+Replace the current subline:
+```
+Inspired by He-Man and the Masters of the Universe (1983–1985)
+```
+with:
+```
+A deep exploration into the Filmation universe (1983–1985)
+```
+Keep the same italic Garamond styling and position directly under the HE-MANIAC title.
 
-**2. `tailwind.config.ts`** — in `fontFamily`, change `garamond` to fall back through Baloo 2 first:
+**2. `src/components/layout/SiteFooter.tsx`**
+Replace the existing footer line:
 ```
-garamond: ["Baloo 2", "EB Garamond", "Georgia", "serif"]
+A private record. Inspired by the 1983 Filmation series.
 ```
-(keeping the key name `garamond` avoids touching every component that uses `font-garamond`.) Also add a dedicated `baloo: ["Baloo 2", "system-ui", "sans-serif"]` for clarity.
-
-**3. `src/index.css`** — update the `@import url(...)` for Google Fonts to include Baloo 2, and update the `body` rule:
+with the full attribution:
 ```
-font-family: 'Baloo 2', 'EB Garamond', Georgia, serif;
+Inspired by He-Man and the Masters of the Universe (1983–1985).
+A private record.
 ```
+Keep the existing footer styling (italic Garamond/Baloo, muted, centered, gold divider).
 
 ## Notes
 
-- Baloo 2 is a rounded sans-serif — visually it shifts the body away from the literary serif feel toward something warmer/softer. Headings stay Cinzel so the cinematic identity is preserved.
-- All existing `font-garamond` utility classes keep working (Baloo 2 takes precedence via the stack).
-- Easy to revert: restore the original font-family lines.
-- No component edits required.
+- The homepage subline becomes about *intent* (deep exploration), the footer carries the *attribution*. This separates poetic framing from credit, which fits the logbook tone.
+- No routing, layout, or component-structure changes.
+- Easy to swap the tagline wording later — single line in `Home.tsx`.
 
 ## Files Touched
 
-- `index.html`
-- `tailwind.config.ts`
-- `src/index.css`
+- `src/pages/Home.tsx`
+- `src/components/layout/SiteFooter.tsx`
 
