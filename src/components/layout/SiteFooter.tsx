@@ -5,7 +5,10 @@ export default function SiteFooter() {
         He-Maniac
       </p>
       <p className="font-garamond italic text-muted-foreground text-sm">
-        A private record. Inspired by the 1983 Filmation series.
+        Inspired by He-Man and the Masters of the Universe (1983–1985).
+      </p>
+      <p className="font-garamond italic text-muted-foreground text-sm">
+        A private record.
       </p>
       <div className="mt-6 flex items-center justify-center gap-4">
         <div className="gold-line w-24 opacity-30" />

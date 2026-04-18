@@ -13,7 +13,7 @@ export default function Home() {
             HE-MANIAC
           </h1>
           <p className="font-garamond italic text-muted-foreground text-base md:text-lg">
-            Inspired by He-Man and the Masters of the Universe (1983–1985)
+            A deep exploration into the Filmation universe (1983–1985)
           </p>
         </div>
 
