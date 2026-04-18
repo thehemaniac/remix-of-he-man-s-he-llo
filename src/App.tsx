@@ -3,7 +3,16 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Disclaimer from "./pages/Disclaimer";
+import CastleGrayskull from "./pages/projects/CastleGrayskull";
+import Part1ReferenceImages from "./pages/projects/Part1ReferenceImages";
+import Part2StructureMapping from "./pages/projects/Part2StructureMapping";
+import Part3FinalBuild from "./pages/projects/Part3FinalBuild";
+import Granamyr from "./pages/projects/Granamyr";
+import Skytree from "./pages/projects/Skytree";
+import WitchesOfFire from "./pages/projects/WitchesOfFire";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -15,7 +24,25 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/castle-grayskull" element={<CastleGrayskull />} />
+          <Route
+            path="/projects/castle-grayskull/part-1-reference-images"
+            element={<Part1ReferenceImages />}
+          />
+          <Route
+            path="/projects/castle-grayskull/part-2-structure-mapping"
+            element={<Part2StructureMapping />}
+          />
+          <Route
+            path="/projects/castle-grayskull/part-3-final-build"
+            element={<Part3FinalBuild />}
+          />
+          <Route path="/projects/granamyr" element={<Granamyr />} />
+          <Route path="/projects/skytree" element={<Skytree />} />
+          <Route path="/projects/witches-of-fire" element={<WitchesOfFire />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
