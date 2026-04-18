@@ -1,46 +1,29 @@
 
 
-Move the "Inspired by..." attribution from the homepage subline into the footer, and replace the homepage subline with a more evocative tagline.
-
-## Tagline options (will use #1 unless you prefer another)
-
-1. **A deep exploration into the Filmation universe (1983–1985)**
-2. A quiet study of the Filmation universe (1983–1985)
-3. Notes from inside the Filmation universe (1983–1985)
+Update homepage subline and body copy.
 
 ## Changes
 
-**1. `src/pages/Home.tsx`**
-Replace the current subline:
-```
-Inspired by He-Man and the Masters of the Universe (1983–1985)
-```
-with:
-```
-A deep exploration into the Filmation universe (1983–1985)
-```
-Keep the same italic Garamond styling and position directly under the HE-MANIAC title.
+**`src/pages/Home.tsx`**
 
-**2. `src/components/layout/SiteFooter.tsx`**
-Replace the existing footer line:
-```
-A private record. Inspired by the 1983 Filmation series.
-```
-with the full attribution:
-```
-Inspired by He-Man and the Masters of the Universe (1983–1985).
-A private record.
-```
-Keep the existing footer styling (italic Garamond/Baloo, muted, centered, gold divider).
+1. Subline → `A personal record from the Filmation universe (1983–1985)`
 
-## Notes
+2. Replace the single body paragraph with four short stanzas, each on its own line, preserving the existing `font-garamond text-foreground/85 text-lg md:text-xl leading-relaxed max-w-xl` styling. Use `space-y-4` on a wrapping container so each line breathes:
 
-- The homepage subline becomes about *intent* (deep exploration), the footer carries the *attribution*. This separates poetic framing from credit, which fits the logbook tone.
-- No routing, layout, or component-structure changes.
-- Easy to swap the tagline wording later — single line in `Home.tsx`.
+```
+The original Filmation series ran for 130 episodes,
+introducing Eternia and its characters to a generation.
+
+He-Man, Skeletor, Man-At-Arms, Teela.
+
+A world where fantasy, science, and myth coexisted.
+
+This is where it started.
+```
+
+Render as four separate `<p>` elements inside a `div` with `space-y-4`, keeping the centered layout. The final line ("This is where it started.") will use a slightly emphasized treatment — italic + gold/80 — to act as a quiet closing beat before the divider.
 
 ## Files Touched
 
 - `src/pages/Home.tsx`
-- `src/components/layout/SiteFooter.tsx`
 
