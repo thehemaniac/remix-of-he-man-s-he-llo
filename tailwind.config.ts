@@ -70,7 +70,8 @@ export default {
       fontFamily: {
         cinzel: ["Cinzel", "serif"],
         "cinzel-deco": ["Cinzel Decorative", "serif"],
-        garamond: ["EB Garamond", "Georgia", "serif"],
+        garamond: ["Baloo 2", "EB Garamond", "Georgia", "serif"],
+        baloo: ["Baloo 2", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
