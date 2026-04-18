@@ -18,9 +18,8 @@ export default function Home() {
         </div>
 
         <p className="font-garamond text-foreground/85 text-lg md:text-xl leading-relaxed max-w-xl">
-          Inspired by He-Man and the Masters of the Universe (1983–1985), the
-          original Filmation series ran for 130 episodes and introduced a world
-          where Eternia blended fantasy, science, and myth. At its center stood
+          The original Filmation series ran for 130 episodes and introduced a
+          world where Eternia blended fantasy, science, and myth. At its center stood
           Castle Grayskull — a place of power, mystery, and transformation —
           alongside characters like He-Man, Skeletor, Man-At-Arms, and Teela.
           The series defined the look and feel of this universe for a generation.
