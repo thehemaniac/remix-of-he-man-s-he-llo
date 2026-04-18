@@ -13,17 +13,19 @@ export default function Home() {
             HE-MANIAC
           </h1>
           <p className="font-garamond italic text-muted-foreground text-base md:text-lg">
-            A deep exploration into the Filmation universe (1983–1985)
+            A personal record from the Filmation universe (1983–1985)
           </p>
         </div>
 
-        <p className="font-garamond text-foreground/85 text-lg md:text-xl leading-relaxed max-w-xl">
-          The original Filmation series ran for 130 episodes and introduced a
-          world where Eternia blended fantasy, science, and myth. At its center stood
-          Castle Grayskull — a place of power, mystery, and transformation —
-          alongside characters like He-Man, Skeletor, Man-At-Arms, and Teela.
-          The series defined the look and feel of this universe for a generation.
-        </p>
+        <div className="font-garamond text-foreground/85 text-lg md:text-xl leading-relaxed max-w-xl space-y-4">
+          <p>
+            The original Filmation series ran for 130 episodes,
+            introducing Eternia and its characters to a generation.
+          </p>
+          <p>He-Man, Skeletor, Man-At-Arms, Teela.</p>
+          <p>A world where fantasy, science, and myth coexisted.</p>
+          <p className="italic text-gold/80">This is where it started.</p>
+        </div>
 
         <div className="flex items-center gap-4 w-full max-w-sm">
           <div className="gold-line flex-1 opacity-40" />
