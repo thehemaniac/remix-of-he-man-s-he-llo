@@ -24,7 +24,7 @@ export default function Part1ReferenceImages() {
         <div className="gold-line w-full mt-6" />
       </header>
 
-      <div className="space-y-24">
+      <div>
         {/* Opening */}
         <EntryBlock>
           <p>I start by going through the first 33 episodes.</p>
@@ -36,7 +36,7 @@ export default function Part1ReferenceImages() {
         </EntryBlock>
 
         {/* 6 image grid */}
-        <div className="border border-border/60 bg-ash/40 p-4 md:p-6">
+        <div className="mt-12 md:mt-16 border border-border/60 bg-ash/40 p-4 md:p-6">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
             {Array.from({ length: 6 }).map((_, i) => (
               <ImagePlaceholder
