@@ -125,29 +125,33 @@ export default function Part1ReferenceImages() {
         </div>
 
         {/* Bridge */}
-        <EntryBlock>
-          <p>These define the direction.</p>
-          <p>I move forward with these.</p>
-        </EntryBlock>
+        <div className="pt-16 md:pt-20">
+          <EntryBlock>
+            <p>These define the direction.</p>
+            <p>I move forward with these.</p>
+          </EntryBlock>
+        </div>
 
-        <div className="gold-line w-full" />
+        <div className="gold-line w-full mt-16 md:mt-20" />
 
         {/* First Pass */}
-        <EntryBlock label="First Pass">
-          <p>I change the style.</p>
-          <p>Not to improve them.</p>
-          <p>To see them better.</p>
-          <p>The same input.</p>
-          <p>Different systems.</p>
-          <p>Each one interprets the structure differently.</p>
-          <p>Some stretch it.</p>
-          <p>Some flatten it.</p>
-          <p>Some lose the weight completely.</p>
-        </EntryBlock>
+        <div className="pt-28 md:pt-36 mb-10">
+          <EntryBlock label="First Pass">
+            <p>I change the style.</p>
+            <p>Not to improve them.</p>
+            <p>To see them better.</p>
+            <p>The same input.</p>
+            <p>Different systems.</p>
+            <p>Each one interprets the structure differently.</p>
+            <p>Some stretch it.</p>
+            <p>Some flatten it.</p>
+            <p>Some lose the weight completely.</p>
+          </EntryBlock>
+        </div>
 
         {/* Model output grid — uniform square tiles */}
-        <div className="border border-border/60 bg-ash/40 p-4 md:p-6">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        <div className="border border-border/60 bg-ash/40 p-2 md:p-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
             {Array.from({ length: 9 }).map((_, i) => {
               const model = Math.floor(i / 3) + 1;
               const output = (i % 3) + 1;
@@ -160,6 +164,18 @@ export default function Part1ReferenceImages() {
               );
             })}
           </div>
+        </div>
+
+        {/* Realization */}
+        <div className="pt-16 md:pt-20 pb-8 md:pb-12">
+          <EntryBlock>
+            <p>They don't match.</p>
+            <p>But something starts to repeat.</p>
+            <p>The upper structure holds.</p>
+            <p>The middle compresses.</p>
+            <p>The base merges.</p>
+            <p>It appears across them.</p>
+          </EntryBlock>
         </div>
 
         <EntryBlock>
