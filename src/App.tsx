@@ -10,9 +10,6 @@ import CastleGrayskull from "./pages/projects/CastleGrayskull";
 import Part1ReferenceImages from "./pages/projects/Part1ReferenceImages";
 import Part2StructureMapping from "./pages/projects/Part2StructureMapping";
 import Part3FinalBuild from "./pages/projects/Part3FinalBuild";
-import Granamyr from "./pages/projects/Granamyr";
-import Skytree from "./pages/projects/Skytree";
-import WitchesOfFire from "./pages/projects/WitchesOfFire";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,9 +36,6 @@ const App = () => (
             path="/projects/castle-grayskull/part-3-final-build"
             element={<Part3FinalBuild />}
           />
-          <Route path="/projects/granamyr" element={<Granamyr />} />
-          <Route path="/projects/skytree" element={<Skytree />} />
-          <Route path="/projects/witches-of-fire" element={<WitchesOfFire />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

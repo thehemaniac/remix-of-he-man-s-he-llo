@@ -9,27 +9,6 @@ const projects = [
     status: "active" as const,
     meta: "Active",
   },
-  {
-    index: "II",
-    title: "Making of Granamyr",
-    to: "/projects/granamyr",
-    status: "upcoming" as const,
-    meta: "Single entry",
-  },
-  {
-    index: "III",
-    title: "Making of Skytree",
-    to: "/projects/skytree",
-    status: "upcoming" as const,
-    meta: "Not opened",
-  },
-  {
-    index: "IV",
-    title: "Making of the Witches of Fire",
-    to: "/projects/witches-of-fire",
-    status: "upcoming" as const,
-    meta: "Not opened",
-  },
 ];
 
 export default function Projects() {
@@ -41,7 +20,7 @@ export default function Projects() {
         </p>
         <h1 className="font-cinzel text-4xl md:text-5xl text-bone">Projects</h1>
         <p className="font-garamond italic text-muted-foreground text-lg max-w-xl">
-          Four entries. One in motion.
+          One entry. In motion.
         </p>
       </header>
 

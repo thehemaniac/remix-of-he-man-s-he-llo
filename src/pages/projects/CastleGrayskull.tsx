@@ -41,9 +41,9 @@ export default function CastleGrayskull() {
           Making of Castle Grayskull
         </h1>
         <div className="font-garamond italic text-foreground/80 text-lg md:text-xl space-y-2 pt-4">
-          <p>I start with the structure.</p>
-          <p>I keep what holds.</p>
-          <p>I leave what doesn't.</p>
+          <p>Recreating the most iconic structure from the Filmation universe.</p>
+          <p>Studying what holds.</p>
+          <p>Discarding what doesn't.</p>
         </div>
       </header>
 
