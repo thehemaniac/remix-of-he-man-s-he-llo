@@ -178,29 +178,22 @@ export default function Part1ReferenceImages() {
           </EntryBlock>
         </div>
 
-        <EntryBlock>
-          <p>They don't match.</p>
-          <p>But something starts to repeat.</p>
-          <p>The upper structure holds.</p>
-          <p>The middle compresses.</p>
-          <p>The base merges.</p>
-          <p>It appears across them.</p>
-        </EntryBlock>
-
         {/* Record */}
-        <EntryBlock label="Record">
-          <p>I keep all outputs.</p>
-          <p>Each one shows a different reading of the same structure.</p>
-        </EntryBlock>
+        <div className="pt-24 md:pt-32">
+          <EntryBlock label="Record">
+            <p>I keep all outputs.</p>
+            <p>Each one shows a different reading of the same structure.</p>
+          </EntryBlock>
+        </div>
 
         {/* Sequence / contact sheet — ref → outputs per model */}
-        <div className="space-y-10">
+        <div className="mt-12 md:mt-16 space-y-16 md:space-y-20">
           {[1, 2, 3].map((model) => (
             <div key={model} className="space-y-3">
               <p className="font-cinzel text-[10px] tracking-[0.5em] text-gold uppercase">
                 Model 0{model}
               </p>
-              <div className="border border-border/60 bg-ash/40 p-3 md:p-4">
+              <div className="pt-6 border border-border/60 bg-ash/40 p-3 md:p-4">
                 <div className="grid grid-cols-[1fr_auto_3fr] gap-3 md:gap-4 items-center">
                   {/* Reference */}
                   <div>
@@ -231,7 +224,7 @@ export default function Part1ReferenceImages() {
         </div>
 
         {/* Ending */}
-        <div className="pt-8">
+        <div className="pt-32 md:pt-40">
           <EntryBlock>
             <p>The structure isn't resolved yet.</p>
             <p>It has to be forced.</p>
@@ -240,7 +233,7 @@ export default function Part1ReferenceImages() {
         </div>
 
         {/* Next link */}
-        <div className="pt-16 border-t border-border">
+        <div className="mt-28 md:mt-36 pt-16 border-t border-border">
           <Link
             to="/projects/castle-grayskull/part-2-structure-mapping"
             className="group flex items-baseline justify-between gap-6"
