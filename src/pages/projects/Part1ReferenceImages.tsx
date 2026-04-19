@@ -50,15 +50,17 @@ export default function Part1ReferenceImages() {
         </div>
 
         {/* Observations */}
-        <EntryBlock>
-          <p>The front holds.</p>
-          <p>The face stays consistent.</p>
-          <p>The entrance doesn't shift.</p>
-          <p>From the sides, it changes.</p>
-          <p>Some parts align.</p>
-          <p>Others don't stay the same.</p>
-          <p>I split them.</p>
-        </EntryBlock>
+        <div className="pt-16 md:pt-20">
+          <EntryBlock>
+            <p>The front holds.</p>
+            <p>The face stays consistent.</p>
+            <p>The entrance doesn't shift.</p>
+            <p>From the sides, it changes.</p>
+            <p>Some parts align.</p>
+            <p>Others don't stay the same.</p>
+            <p>I split them.</p>
+          </EntryBlock>
+        </div>
 
         {/* Divider with label */}
         <div className="pt-20 md:pt-28 flex items-center gap-4">
