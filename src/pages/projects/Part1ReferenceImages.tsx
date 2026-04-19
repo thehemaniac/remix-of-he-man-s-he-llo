@@ -24,7 +24,7 @@ export default function Part1ReferenceImages() {
         <div className="gold-line w-full mt-6" />
       </header>
 
-      <div className="space-y-24">
+      <div>
         {/* Opening */}
         <EntryBlock>
           <p>I start by going through the first 33 episodes.</p>
@@ -36,7 +36,7 @@ export default function Part1ReferenceImages() {
         </EntryBlock>
 
         {/* 6 image grid */}
-        <div className="border border-border/60 bg-ash/40 p-4 md:p-6">
+        <div className="mt-12 md:mt-16 border border-border/60 bg-ash/40 p-4 md:p-6">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
             {Array.from({ length: 6 }).map((_, i) => (
               <ImagePlaceholder
@@ -50,18 +50,20 @@ export default function Part1ReferenceImages() {
         </div>
 
         {/* Observations */}
-        <EntryBlock>
-          <p>The front holds.</p>
-          <p>The face stays consistent.</p>
-          <p>The entrance doesn't shift.</p>
-          <p>From the sides, it changes.</p>
-          <p>Some parts align.</p>
-          <p>Others don't stay the same.</p>
-          <p>I split them.</p>
-        </EntryBlock>
+        <div className="pt-16 md:pt-20">
+          <EntryBlock>
+            <p>The front holds.</p>
+            <p>The face stays consistent.</p>
+            <p>The entrance doesn't shift.</p>
+            <p>From the sides, it changes.</p>
+            <p>Some parts align.</p>
+            <p>Others don't stay the same.</p>
+            <p>I split them.</p>
+          </EntryBlock>
+        </div>
 
         {/* Divider with label */}
-        <div className="flex items-center gap-4">
+        <div className="pt-20 md:pt-28 flex items-center gap-4">
           <div className="flex-1 gold-line" />
           <p className="font-cinzel text-[10px] tracking-[0.5em] text-gold uppercase">
             Structure / Detail
@@ -70,7 +72,7 @@ export default function Part1ReferenceImages() {
         </div>
 
         {/* Structure vs Detail — side by side on md+ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
+        <div className="pt-8 md:pt-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
           {/* Structure column */}
           <div className="space-y-6">
             <div className="space-y-3">
@@ -97,7 +99,7 @@ export default function Part1ReferenceImages() {
           </div>
 
           {/* Detail column */}
-          <div className="space-y-6">
+          <div className="space-y-6 md:pl-6 md:pt-4">
             <div className="space-y-3">
               <p className="font-cinzel text-[10px] tracking-[0.5em] text-muted-foreground uppercase">
                 Detail
@@ -123,29 +125,33 @@ export default function Part1ReferenceImages() {
         </div>
 
         {/* Bridge */}
-        <EntryBlock>
-          <p>These define the direction.</p>
-          <p>I move forward with these.</p>
-        </EntryBlock>
+        <div className="pt-16 md:pt-20">
+          <EntryBlock>
+            <p>These define the direction.</p>
+            <p>I move forward with these.</p>
+          </EntryBlock>
+        </div>
 
-        <div className="gold-line w-full" />
+        <div className="gold-line w-full mt-16 md:mt-20" />
 
         {/* First Pass */}
-        <EntryBlock label="First Pass">
-          <p>I change the style.</p>
-          <p>Not to improve them.</p>
-          <p>To see them better.</p>
-          <p>The same input.</p>
-          <p>Different systems.</p>
-          <p>Each one interprets the structure differently.</p>
-          <p>Some stretch it.</p>
-          <p>Some flatten it.</p>
-          <p>Some lose the weight completely.</p>
-        </EntryBlock>
+        <div className="pt-28 md:pt-36 mb-10">
+          <EntryBlock label="First Pass">
+            <p>I change the style.</p>
+            <p>Not to improve them.</p>
+            <p>To see them better.</p>
+            <p>The same input.</p>
+            <p>Different systems.</p>
+            <p>Each one interprets the structure differently.</p>
+            <p>Some stretch it.</p>
+            <p>Some flatten it.</p>
+            <p>Some lose the weight completely.</p>
+          </EntryBlock>
+        </div>
 
         {/* Model output grid — uniform square tiles */}
-        <div className="border border-border/60 bg-ash/40 p-4 md:p-6">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        <div className="border border-border/60 bg-ash/40 p-2 md:p-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
             {Array.from({ length: 9 }).map((_, i) => {
               const model = Math.floor(i / 3) + 1;
               const output = (i % 3) + 1;
@@ -160,29 +166,34 @@ export default function Part1ReferenceImages() {
           </div>
         </div>
 
-        <EntryBlock>
-          <p>They don't match.</p>
-          <p>But something starts to repeat.</p>
-          <p>The upper structure holds.</p>
-          <p>The middle compresses.</p>
-          <p>The base merges.</p>
-          <p>It appears across them.</p>
-        </EntryBlock>
+        {/* Realization */}
+        <div className="pt-16 md:pt-20 pb-8 md:pb-12">
+          <EntryBlock>
+            <p>They don't match.</p>
+            <p>But something starts to repeat.</p>
+            <p>The upper structure holds.</p>
+            <p>The middle compresses.</p>
+            <p>The base merges.</p>
+            <p>It appears across them.</p>
+          </EntryBlock>
+        </div>
 
         {/* Record */}
-        <EntryBlock label="Record">
-          <p>I keep all outputs.</p>
-          <p>Each one shows a different reading of the same structure.</p>
-        </EntryBlock>
+        <div className="pt-24 md:pt-32">
+          <EntryBlock label="Record">
+            <p>I keep all outputs.</p>
+            <p>Each one shows a different reading of the same structure.</p>
+          </EntryBlock>
+        </div>
 
         {/* Sequence / contact sheet — ref → outputs per model */}
-        <div className="space-y-10">
+        <div className="mt-12 md:mt-16 space-y-16 md:space-y-20">
           {[1, 2, 3].map((model) => (
             <div key={model} className="space-y-3">
               <p className="font-cinzel text-[10px] tracking-[0.5em] text-gold uppercase">
                 Model 0{model}
               </p>
-              <div className="border border-border/60 bg-ash/40 p-3 md:p-4">
+              <div className="pt-6 border border-border/60 bg-ash/40 p-3 md:p-4">
                 <div className="grid grid-cols-[1fr_auto_3fr] gap-3 md:gap-4 items-center">
                   {/* Reference */}
                   <div>
@@ -213,7 +224,7 @@ export default function Part1ReferenceImages() {
         </div>
 
         {/* Ending */}
-        <div className="pt-8">
+        <div className="pt-32 md:pt-40">
           <EntryBlock>
             <p>The structure isn't resolved yet.</p>
             <p>It has to be forced.</p>
@@ -222,7 +233,7 @@ export default function Part1ReferenceImages() {
         </div>
 
         {/* Next link */}
-        <div className="pt-16 border-t border-border">
+        <div className="mt-28 md:mt-36 pt-16 border-t border-border">
           <Link
             to="/projects/castle-grayskull/part-2-structure-mapping"
             className="group flex items-baseline justify-between gap-6"
