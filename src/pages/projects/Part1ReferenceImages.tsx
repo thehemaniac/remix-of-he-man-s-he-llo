@@ -61,7 +61,7 @@ export default function Part1ReferenceImages() {
         </EntryBlock>
 
         {/* Divider with label */}
-        <div className="flex items-center gap-4">
+        <div className="pt-20 md:pt-28 flex items-center gap-4">
           <div className="flex-1 gold-line" />
           <p className="font-cinzel text-[10px] tracking-[0.5em] text-gold uppercase">
             Structure / Detail
@@ -70,7 +70,7 @@ export default function Part1ReferenceImages() {
         </div>
 
         {/* Structure vs Detail — side by side on md+ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
+        <div className="pt-8 md:pt-10 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
           {/* Structure column */}
           <div className="space-y-6">
             <div className="space-y-3">
