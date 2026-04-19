@@ -99,7 +99,7 @@ export default function Part1ReferenceImages() {
           </div>
 
           {/* Detail column */}
-          <div className="space-y-6">
+          <div className="space-y-6 md:pl-6 md:pt-4">
             <div className="space-y-3">
               <p className="font-cinzel text-[10px] tracking-[0.5em] text-muted-foreground uppercase">
                 Detail
